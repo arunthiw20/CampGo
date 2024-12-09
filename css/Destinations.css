@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lilita+One&family=Luckiest+Guy&family=Poppins&family=Rancho&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lilita+One&family=Luckiest+Guy&family=Montserrat&family=Poppins&family=Rancho&family=Sedgwick+Ave+Display&display=swap');
+:root{
+  --green:var(--green);
+  --green01: hsl(99, 56%, 58%);
+  --green02: hsl(94, 73%, 41%);
+  --green03: hsl(149, 88%, 13%);
+  --green04: hsl(159, 95%, 17%);
+  --white: hsl(0, 0%, 100%);
+  --white01: hsl(0, 0%, 88%);
+  --white02: hsl(0, 0%, 98%);
+  --white03: hsl(0, 0%, 88%);
+
+  --fs-1: calc(20px + 3.5vw);
+  --fs-2: calc(18px + 1.6vw);
+  --fs-4: 15px;
+  --fs-5: 14px;
+  --fs-6: 13px;
+  --fs-7: 12px;
+  --fs-8: 11px;
+
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+
+  --transition: 0.25s ease-in-out;
+  --section-padding: 30px;
+  --radius-15: 15px;
+  --radius-25: 25px;
+
+}
+*,*::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+::selection{
+    background-color: lightgreen;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:6rem ;
+    scroll-behavior: smooth;
+    background-color: #ffffff;
+}
+  .btn {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: var(--fs-5);
+    border-radius: 100px;
+    padding: var(--padding, 8px 18px);
+    border: var(--border-width, 2px) solid transparent;
+    transition: var(--transition);
+    font-family: 'Montserrat';
+  }
+  .btn-primary {
+    background: var(--green02);
+    border-color: var(--green02);
+    font-family: 'Montserrat';
+  }
+  .btn-primary:is(:hover, :focus) {
+    background: var(--green04);
+    border-color: var(--green04);
+  }
+  .btn-secondary { 
+    border-color: var(--white); 
+  }
+  .btn-secondary:is(:hover, :focus) { 
+    background: hsla(0, 0%, 100%, 0.1); 
+  }
+.container{
+    padding:0 7%;
+}
+ion-icon { 
+    pointer-events: none; 
+}
+
+
+ /* Header */
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:var(--white01);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+}
+.logo{
+    font-size: 3rem;
+    font-weight:bolder;
+    color:var(--green02);
+    font-family: 'Kaushan Script';
+}
+
+.header_h a{
+    color:rgb(0, 0, 0);
+    font-size: var(--fs-4);
+    margin:.8rem;
+}
+.header_h a:hover{
+    color:var(--green02);
+}
+.icons i{
+    font-size: 2.5rem;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+    margin-right: 2rem;
+}
+.icons i:hover{
+    color:var(--green02);
+    
+}
+#menu-bar{
+    color: rgb(0, 0, 0);
+    background-color: var(--white01);
+    border: 0.1rem solid var(--white01);
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    padding: 0.5rem 1.2rem;
+    cursor:pointer;
+    display:none;
+}
+
+/*Destinations*/
+.list-container{
+    margin-top: 150px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    font-size:30px; 
+    color:var(--green03);
+    font-weight: 800;
+    font-family: 'Poppins';
+    margin-bottom:30px;
+    text-transform: uppercase;
+}
+.left-col p{
+    font-weight:550;
+    margin:4px 0;
+    font-family: 'Poppins';
+    font-size: var(--fs-4);
+}
+.camp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:30px 0;
+    border-top: 1px solid var(--green02);
+}
+.camp .camp-info .price a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.camp-img{
+    flex-basis: 40%;
+}
+.camp-info{
+    flex-basis:58% ;
+}
+.camp-img img{
+    width: 100%;
+    border-radius:12px;
+    box-shadow:0 0.5rem 0.5rem rgba(0,0,0,1);
+}
+.camp-info h3{
+    font-weight:600;
+    font-size: 22px;
+    margin:5px 0;
+    color: var(--green03);
+    font-family: 'Poppins';
+}
+.camp-info p{
+    font-weight:550;
+    margin:4px 0;
+    font-family: 'Montserrat';
+    font-size: var(--fs-5);
+}
+.camp-info i{
+    color:var(--green02);
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.price{
+    text-align: right;
+}
+.price h4{
+    font-size:20px;
+    font-family: 'Montserrat';
+}
+.price h4 span{
+    font-size:16px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+}
+.price button{
+    align-items: center;
+    margin-top: 5px;
+}
+.sidebar{
+    border:1px solid var(--green02);
+    padding:20px 30px;
+    margin-top:30px ;
+    font-family: 'Poppins';
+}
+.sidebar h2{
+    font-weight:500 ;  
+}
+.sidebar h3{
+    font-weight:300 ;
+    margin: 20px 0 10px;
+    text-decoration:underline;
+}
+.filter{
+    display:flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex:0.8;
+}
+.filter input{
+    margin-right: 15px;
+    cursor:pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+}
+.sidebar-link a{
+    text-decoration: none;
+}
+.pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pages img{
+    width:15px;
+    margin: 10px 20px;
+}
+.pages span{
+    margin:7px 8px;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pages .current{
+    background-color: var(--green02);
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+/*Navigation Bar*/
+@media(max-width:1200px){
+    html{
+        font-size:55%;
+    }
+    section{
+        padding: 3rem 5%;
+    }
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding:3rem 2rem;
+    }
+}
+@media (max-width:768px){
+    #menu-bar{
+        display:initial;
+        
+    }
+    header .header_h{
+        position:absolute;
+        top:100%;
+        right:0;
+        left:0;
+        border-top: 0.1rem solid rgba(0,0,0);
+        padding:1rem 2rem;
+        clip-path: polygon(0 0, 100% 0,100% 0,0 0);
+        background: var(--white01);
+    }
+    header .header_h.active{
+        clip-path: polygon(0 0, 100% 0,100% 100%,0 100%);
+    }
+    header .header_h a{
+        display: block;
+        border-radius:0.5rem;
+        padding: 1.4rem;
+        margin: 1.4rem 0;
+    }
+    .list-container{
+        margin-top: 150px;
+    }
+    .left-col h1{
+        font-size:22px;
+    }
+    .left-col,.right-col,.camp-img,.camp-info{
+        flex-basis: 100%;
+    }
+    .camp-info p{
+        font-size: 13px;
+    }
+    .camp-info i{
+        font-size: 16px;
+    }
+    .pages span{
+        margin: 10px 2px;
+        width:30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}

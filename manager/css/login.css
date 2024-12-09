@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../Resources/3558088.jpg) ;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .container {
+    float:left;
+    max-width: 30%;
+    margin: 100px auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: 35%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border:2px solid #fff;
+
+    
+  }
+  .custom{
+    backdrop-filter: blur(20px);
+    background: transparent;
+    width: 400px;
+    height:440px;
+    border-radius:40px;
+  }
+
+  h1 {
+    color: #fff;
+    text-align: center;
+  }
+  
+  form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-container label {
+    margin-left: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-link {
+    text-align: center;
+    color: #888;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover {
+    color: #555;
+  }
+  
+  .log-topic{
+    color: #fff;
+    font-family: 'Fasthand', cursive;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: -60px;
+  }
+
+  .txt{
+    
+    background: transparent;
+    border: none;
+
+  }
+
+  .txt::se{
+    border: none;
+  }
+
+ 
